@@ -1,2 +1,3 @@
-# Museum-App
-Application, that can help you to find beautiful artwork. Written on the Vanilla Js.
+# Run npm install
+# Run npm start
+

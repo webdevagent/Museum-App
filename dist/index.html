@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Rijksmuseum</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" </head> <body>
+  <div class='header'>
+    <h1>Rijksmuseum</h1>
+    <div class="navigation">
+      <form class="search">
+        <select class="add__type">
+          <option value="relevance" selected>Relevance</option>
+          <option value="artist">Artist A-Z</option>
+          <option value="artistdesc">Artist Z-A</option>
+          <option value="achronologic">Achronologic</option>
+          <option value="chronologic">Chronologic</option>
+        </select>
+        <input type="text" class="search_field" placeholder="Search for amazing Art works...">
+        <button class="btn search_btn">
+          <span>Search</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="navigation_menu">
+    <p class="liked">Like</p>
+    <ul>
+      <li class="prev">Prev Page</li>
+      <li class="next">Next Page</li>
+      <li class="art_per_page">10</li>
+      <li class="art_per_page">50</li>
+    </ul>
+  </div>
+  <div class="friends"></div>
+  <div class="modal_container"></div>
+  <script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
