@@ -30,7 +30,10 @@ p, h2, h3 {
   text-align: center;
   transition: 0.5s;
 }
-
+.like-box:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
 .clicked {
   transform: rotateY(180deg);
   transition: transform 0.8s;
@@ -54,6 +57,7 @@ p, h2, h3 {
 
 .flip-box:hover img {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .friends {
