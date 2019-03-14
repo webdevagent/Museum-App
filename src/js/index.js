@@ -64,7 +64,6 @@ domElements.navMenu.addEventListener('click', ({
 
   if (target.className == 'next' && state.page < (Math.ceil(state.artQuantity / state.artsOnPage))) {
     state.page += 1;
-    console.log(target.className);
     newPagerender(state.page, state.artsOnPage);
 
   }
@@ -75,11 +74,9 @@ domElements.navMenu.addEventListener('click', ({
   if (target.className == 'art_per_page') {
     if (target.textContent == '10' && state.artsOnPage == 50) {
       state.page = ((state.page * 50 - 50) + 10) / 10;
-      console.log(state.page);
     } else {
       state.page = Math.ceil((state.page * (Math.ceil(state.artQuantity / +target.textContent))) / Math.ceil(state.artQuantity / state.artsOnPage));
     }
-    console.log(state.page);
     state.artsOnPage = +target.textContent;
 
     newPagerender(state.page, state.artsOnPage);
@@ -101,8 +98,6 @@ domElements.artsContainer.addEventListener('click', async ({
     try {
       await state.modalCard.getResults();
       renderArt(state.modalCard.result);
-      console.log(state.modalCard);
-
     } catch (error) {
       console.log(error);
     }
@@ -117,7 +112,6 @@ domElements.artsContainer.addEventListener('click', async ({
 domElements.modalContainer.addEventListener('click', ({
   target
 }) => {
-  console.log(target.tagName);
   if (target.className == 'close') domElements.modalContainer.innerHTML = '';
   if (target.className == 'more_info') {
     document.querySelector('.more_info').classList.add('remove-info');

@@ -18,6 +18,5 @@ export const renderArt = art => {
   </div>
 
     `;
-  console.log(domElements.modalContainer);
   domElements.modalContainer.insertAdjacentHTML('beforeend', markup);
 };
